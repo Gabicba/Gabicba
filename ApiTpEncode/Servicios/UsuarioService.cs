@@ -76,18 +76,17 @@ namespace ApiTpEncode.Servicios
 
         public async Task DeleteUsuarioAsync(int id)
         {
-            //buscamos el usuario por su id
+            // Buscamos el usuario por su id
             var usuario = await _usuarioRepository.GetByIdAsync(id);
-            if (!await UsuarioExistsAsync(id)) 
-            {
-                throw new KeyNotFoundException("usuario no encontrado");
-            }
-            await _usuarioRepository.DeleteAsync(id);
-        }
 
-        public async Task<bool> UsuarioExistsAsync(int id)
-        {
-            return await _usuarioRepository.usuarioExists(id);
+            // Si el usuario no se encuentra, lanzamos una excepción
+            if (usuario == null)
+            {
+                throw new KeyNotFoundException("Usuario no encontrado");
+            }
+
+            // Eliminamos el usuario
+            await _usuarioRepository.DeleteAsync(id);
         }
 
     }

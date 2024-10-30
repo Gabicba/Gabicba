@@ -62,10 +62,5 @@ namespace ApiTpEncode.Repositories
                 return ; // O manejarlo según tu lógica
             }
         }
-
-        public Task<bool> usuarioExists(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

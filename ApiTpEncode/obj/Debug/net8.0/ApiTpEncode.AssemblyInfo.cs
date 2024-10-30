@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiTpEncode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27e73751429b7c17460e02ad83fc1e9dba3840e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca6d6e32d2844fc5416f5667c73a194a39dfc61a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiTpEncode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiTpEncode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

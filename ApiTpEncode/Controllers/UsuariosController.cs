@@ -98,9 +98,5 @@ namespace ApiTpEncode.Controllers
             return NoContent();
         }
 
-        private async Task<bool> UsuarioExists(int id)
-        {
-            return await _usuarioServicio.UsuarioExistsAsync(id);
-        }
     }
 }

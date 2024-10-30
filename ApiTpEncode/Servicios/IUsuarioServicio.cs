@@ -10,7 +10,6 @@ namespace ApiTpEncode.Servicios
         Task<UsuarioGetDTO> AddUsuarioAsync(UsuarioPostDTO usuarioDTO); // Cambiar a UsuarioPostDTO
         Task UpdateUsuarioAsync(int id, UsuarioPutDTO usuarioDTO); // Cambiar a UsuarioPutDTO
         Task DeleteUsuarioAsync(int id);
-        Task<bool> UsuarioExistsAsync(int id);
 
     }
 }

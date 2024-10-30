@@ -9,6 +9,5 @@ namespace ApiTpEncode.Repositories
         Task AddAsync(Usuario usuario);
         Task UpdateAsync(Usuario usuario);
         Task DeleteAsync(int id);
-        Task<bool> usuarioExists(int id);
     }
 }
